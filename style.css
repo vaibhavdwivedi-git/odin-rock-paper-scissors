@@ -1,0 +1,157 @@
+:root {
+    --primary-light: #ddd;
+    --primary-dark: #222831;
+    --secondary-dark: #393e46;
+    --secondary-dark-hover: #4a4f57;
+    --secondary-dark-active: #5b5f68;
+    --header: #111720;
+    --primary-yellow: #fac650;
+  }
+
+
+
+body{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    margin:0;
+    padding:0;
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: context-menu;
+}
+
+
+
+#header{
+    height:8em;
+    width:100%;
+    background-color: var(--header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    color: var(--primary-yellow);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+#result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+}
+
+#main{
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+#sub{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 0.5em;
+}
+
+#arena{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6em;
+    margin-top: 3em;
+}
+
+.selection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.weapon{
+    font-size: 78px;
+}
+
+.score{
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+#options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 3em;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:156px;
+    width: 156px;
+    border-radius: 12px;
+    background-color: var(--secondary-dark);
+    font-size: 78px;
+}
+
+#footer{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    gap: 8px;
+}
+
+#dialogbox{
+    width:248px;
+    background-color: var(--secondary-dark);
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 10px;
+    position:fixed;
+    text-align: center;
+    top:40%;
+    display: none;
+    flex-direction: column;
+    gap:1em;
+    z-index: 3;
+}
+
+#replay{
+    width: auto;
+    padding: 8px;
+    background-color: var(--secondary-dark-active);
+    border-radius: 10px;
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.btn:hover{
+    background-color: var(--secondary-dark-hover);
+}
+
+#replay:hover{
+    background-color: var(--secondary-dark-hover);
+}
+

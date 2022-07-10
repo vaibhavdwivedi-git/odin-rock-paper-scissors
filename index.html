@@ -2,11 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RO-SHAM-BO</title>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
     
+
+    <div id="header">
+        <div id="title">ROCK PAPER SCISSORS</div>
+    </div>
+
+
+    <div id="content">
+
+        <div id="result">
+            <div id="main">Choose your weapon</div>
+            <div id="sub">First to score 5 points wins the game</div>
+        </div>
+
+        <div id="arena">
+            <div id="player" class="selection">
+                <div class="weapon">❔</div>
+                <div class="score">Player: 0</div>
+            </div>
+            <div id="computer" class="selection">
+                <div class="weapon">❔</div>
+                <div class="score">Computer: 0</div>
+            </div>
+        </div>
+
+        <div id="options">
+            <div class="btn" id="rock">✊</div>
+            <div class="btn" id="paper">✋</div>
+            <div class="btn" id="scissors">✌</div>
+        </div> 
+
+    </div>
+
+    <div id="footer">
+        <p>Copyright © 2022  xhistr</p>
+        <a href="https://github.com/vaibhavdwivedi-git/odin-rock-paper-scissors"><i class="fa fa-github" style="font-size:28px;color:#ddd"></i></a>
+    </div>
+
+
+    <div id="dialogbox">
+        <div id="verdict">You Won!</div>
+        <div id="replay">Play Again</div>
+    </div>
+
+    <div id="overlay"></div>
 </body>
 </html>
+
+<!--❔ ✊ ✋ ✌-->
